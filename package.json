@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "omer ibrahim portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION =false npm install --prefix client npm run build --prefix client",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omer5423/omer-ibrahim.git"
+  },
+  "author": "omer ibrahim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omer5423/omer-ibrahim/issues"
+  },
+  "homepage": "https://github.com/omer5423/omer-ibrahim#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
