@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
+    "start": "npm start --perfix server",
     "client": "npm start --prefix client",
-    "dev": "concurrently\"npm run server\" \"npm run client\""
+    "server": "npm run dev --prefix server",
+    "install": "npm install --prefix client && npm install --prefix server",
+    "dev": "concurrently\"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "npm run build --prefix clinet"
   },
   "author": "",
   "license": "ISC",
