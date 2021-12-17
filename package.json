@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error no test specified\" & exit 1",
-    "start": "npm start --prefix server",
+    "start": "node index.js",
     "client": "npm start --prefix client",
     "server": "node index.js",
     "install": "npm install --prefix client && npm install --prefix server",
-    "dev": "concurrently\"npm run server\" \"npm run client\"",
     "heroku-postbuild": "npm run build --prefix client"
   },
   "author": "",
@@ -33,5 +32,13 @@
   "engines": {
     "node": "14.17.4",
     "npm": "6.14.14"
-  }
+  },
+  "repository": {
+    "type": "ssh",
+    "url": "git+https://git@github.com/omer-ibrahim.com/omeribrahim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omer-ibrahim.com/omeribrahim/issues"
+  },
+  "homepage": "https://github.com/omer-ibrahim.com/omeribrahim#readme"
 }
